@@ -227,7 +227,6 @@ class INSDC2RDF
     list = []
     if subpart_type
       @locations.each do |loc|
-	      puts loc.inspect
         subpart_id = new_uuid
         subpart_begin = position_uri_from_location_start(loc)
         subpart_end = position_uri_from_location_end(loc)
